@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADA Concepts | Industries Served</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind-config.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-cada-cream text-cada-charcoal font-body antialiased selection:bg-cada-sage selection:text-white zen-bg-pattern">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-cada-cream/95 backdrop-blur-md border-b border-cada-sage/20">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex flex-col group">
+                <div class="flex items-center gap-2">
+                    <svg class="w-6 h-6 text-cada-sage" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                    <span class="font-heading text-2xl font-bold tracking-widest text-cada-dark group-hover:text-cada-sage transition-colors">CADA</span>
+                </div>
+                <span class="text-[9px] uppercase tracking-[0.3em] text-cada-taupe font-semibold pl-8">CONCEPTS</span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-xs font-heading font-medium tracking-widest uppercase text-cada-dark/80">
+                <a href="index.html" class="hover:text-cada-sage transition-colors">Home</a>
+                <a href="about.html" class="hover:text-cada-sage transition-colors">About</a>
+                <a href="services.html" class="hover:text-cada-sage transition-colors">Services</a>
+                <a href="process.html" class="hover:text-cada-sage transition-colors">Our Process</a>
+                <a href="industries.html" class="text-cada-sage border-b border-cada-sage">Industries</a>
+                <a href="portfolio.html" class="hover:text-cada-sage transition-colors">Portfolio</a>
+                <a href="contact.html" class="hover:text-cada-sage transition-colors">Contact</a>
+            </nav>
+
+            <a href="contact.html" class="hidden sm:inline-block bg-cada-sage hover:bg-cada-dark text-white px-5 py-2.5 text-xs font-heading tracking-widest uppercase transition-all duration-300 shadow-sm hover:shadow">
+                Start Your Project
+            </a>
+        </div>
+    </header>
+
+    <!-- 05 — INDUSTRIES SERVED -->
+    <section id="industries" class="py-24 bg-cada-cream">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 space-y-16">
+            <div class="text-center max-w-2xl mx-auto space-y-3">
+                <span class="text-xs font-accent tracking-widest text-cada-taupe uppercase block">05 — Sectors</span>
+                <h2 class="font-serif text-3xl sm:text-5xl text-cada-dark">Industries We Transform</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Sector 1 -->
+                <div class="bg-white p-8 border border-cada-sand space-y-4">
+                    <div class="h-40 overflow-hidden relative mb-4">
+                        <img src="Images/13.jpg" alt="Luxury Residential Architecture" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-serif text-xl text-cada-dark">High-End Residential</h3>
+                    <p class="text-xs text-cada-charcoal/70 leading-relaxed font-light">
+                        Private villas, luxury penthouses, and modern apartment interiors designed with quiet elegance and bespoke craftsmanship.
+                    </p>
+                </div>
+
+                <!-- Sector 2 -->
+                <div class="bg-white p-8 border border-cada-sand space-y-4">
+                    <div class="h-40 overflow-hidden relative mb-4">
+                        <img src="Images/5.jpg" alt="Commercial Showrooms" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-serif text-xl text-cada-dark">Corporate & Retail</h3>
+                    <p class="text-xs text-cada-charcoal/70 leading-relaxed font-light">
+                        Commercial headquarters, boutique retail stores, and framing showrooms tailored for high brand visibility and operational flow.
+                    </p>
+                </div>
+
+                <!-- Sector 3 -->
+                <div class="bg-white p-8 border border-cada-sand space-y-4">
+                    <div class="h-40 overflow-hidden relative mb-4">
+                        <img src="Images/11.jpg" alt="Hospitality & Events" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-serif text-xl text-cada-dark">Hospitality & Events</h3>
+                    <p class="text-xs text-cada-charcoal/70 leading-relaxed font-light">
+                        Luxury wedding venues, hotel banquets, and VIP brand activations engineered for maximum spatial impact and guest engagement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cada-dark text-cada-cream py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center text-xs text-cada-sand/50">
+            <p>&copy; 2026 CADA Concepts. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
