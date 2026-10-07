@@ -87,44 +87,64 @@
                 </div>
             </div>
 
-            <!-- Interactive Form -->
-            <div class="bg-cada-charcoal p-8 border border-white/10 space-y-6">
-                <h3 class="font-serif text-xl text-white">Request a Design Consultation</h3>
-                <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you for reaching out to CADA Concepts. Our team will contact you shortly.');">
-                    <div>
-                        <label class="block text-[10px] font-accent uppercase text-cada-sand/70 tracking-wider mb-1">Full Name *</label>
-                        <input type="text" required placeholder="John Doe" class="w-full bg-cada-dark border border-white/20 px-4 py-3 text-xs text-white focus:outline-none focus:border-cada-sage">
-                    </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-[10px] font-accent uppercase text-cada-sand/70 tracking-wider mb-1">Email Address *</label>
-                            <input type="email" required placeholder="john@example.com" class="w-full bg-cada-dark border border-white/20 px-4 py-3 text-xs text-white focus:outline-none focus:border-cada-sage">
-                        </div>
-                        <div>
-                            <label class="block text-[10px] font-accent uppercase text-cada-sand/70 tracking-wider mb-1">Phone Number</label>
-                            <input type="tel" placeholder="+971 50 000 0000" class="w-full bg-cada-dark border border-white/20 px-4 py-3 text-xs text-white focus:outline-none focus:border-cada-sage">
-                        </div>
-                    </div>
-                    <div>
-                        <label class="block text-[10px] font-accent uppercase text-cada-sand/70 tracking-wider mb-1">Service Interest</label>
-                        <select class="w-full bg-cada-dark border border-white/20 px-4 py-3 text-xs text-white focus:outline-none focus:border-cada-sage">
-                            <option value="interior">Interior Design & Turnkey Fit-Out</option>
-                            <option value="branding">Brand Identity Development</option>
-                            <option value="events">Event Styling & Decoration</option>
-                            <option value="perfume">Private Label Perfume Manufacturing</option>
-                            <option value="multiple">Multiple / Integrated Package</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-[10px] font-accent uppercase text-cada-sand/70 tracking-wider mb-1">Project Details</label>
-                        <textarea rows="4" placeholder="Tell us about your spatial, branding, or fragrance goals..." class="w-full bg-cada-dark border border-white/20 px-4 py-3 text-xs text-white focus:outline-none focus:border-cada-sage"></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-cada-sage text-white py-4 text-xs font-accent uppercase tracking-widest font-semibold hover:bg-white hover:text-cada-dark transition-colors duration-300">
-                        Submit Inquiry
-                    </button>
-                </form>
+
+
+
+
+
+<!-- Interactive Form -->
+<div class="bg-cada-charcoal p-8 border border-white/10 space-y-6">
+    <h3 class="font-serif text-xl text-white">Request a Design Consultation</h3>
+    
+    <!-- Updated Form action pointing to FormSubmit -->
+    <form action="https://formsubmit.co/db4ee4ef3b78b39fb907ee78d186ec8e" method="POST" class="space-y-4">
+        
+        <!-- FormSubmit Configurations -->
+        <input type="hidden" name="_subject" value="New CADA Concepts Design Inquiry!">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div>
+            <label class="block text-[10px] font-accent uppercase text-cada-sand/70 tracking-wider mb-1">Full Name *</label>
+            <input type="text" name="Full Name" required placeholder="John Doe" class="w-full bg-cada-dark border border-white/20 px-4 py-3 text-xs text-white focus:outline-none focus:border-cada-sage">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+                <label class="block text-[10px] font-accent uppercase text-cada-sand/70 tracking-wider mb-1">Email Address *</label>
+                <input type="email" name="Email" required placeholder="john@example.com" class="w-full bg-cada-dark border border-white/20 px-4 py-3 text-xs text-white focus:outline-none focus:border-cada-sage">
+            </div>
+            <div>
+                <label class="block text-[10px] font-accent uppercase text-cada-sand/70 tracking-wider mb-1">Phone Number</label>
+                <input type="tel" name="Phone Number" placeholder="+971 50 000 0000" class="w-full bg-cada-dark border border-white/20 px-4 py-3 text-xs text-white focus:outline-none focus:border-cada-sage">
             </div>
         </div>
+
+        <div>
+            <label class="block text-[10px] font-accent uppercase text-cada-sand/70 tracking-wider mb-1">Service Interest</label>
+            <select name="Service Interest" class="w-full bg-cada-dark border border-white/20 px-4 py-3 text-xs text-white focus:outline-none focus:border-cada-sage">
+                <option value="Interior Design & Turnkey Fit-Out">Interior Design & Turnkey Fit-Out</option>
+                <option value="Brand Identity Development">Brand Identity Development</option>
+                <option value="Event Styling & Decoration">Event Styling & Decoration</option>
+                <option value="Private Label Perfume Manufacturing">Private Label Perfume Manufacturing</option>
+                <option value="Multiple / Integrated Package">Multiple / Integrated Package</option>
+            </select>
+        </div>
+
+        <div>
+            <label class="block text-[10px] font-accent uppercase text-cada-sand/70 tracking-wider mb-1">Project Details</label>
+            <textarea name="Project Details" rows="4" placeholder="Tell us about your spatial, branding, or fragrance goals..." class="w-full bg-cada-dark border border-white/20 px-4 py-3 text-xs text-white focus:outline-none focus:border-cada-sage"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-cada-sage text-white py-4 text-xs font-accent uppercase tracking-widest font-semibold hover:bg-white hover:text-cada-dark transition-colors duration-300">
+            Submit Inquiry
+        </button>
+    </form>
+</div>
+
+
+
+
     </section>
 
     <!-- Footer -->
