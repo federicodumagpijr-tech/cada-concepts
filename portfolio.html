@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CADA Concepts | Portfolio Selected Works</title>
-    
+    <meta name="description" content="Explore selected works from CADA Concepts across interior design, turnkey fit-outs, event styling, brand identity, and luxury private-label perfume manufacturing.">
+    <title>CADA Concepts | Portfolio</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
+    <!-- Tailwind CSS CDN & Custom Config -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="tailwind-config.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <script src="js/tailwind-config.js"></script>
+
+    <!-- External Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-cada-cream text-cada-charcoal font-body antialiased selection:bg-cada-sage selection:text-white zen-bg-pattern">
 
     <!-- Header Navigation -->
     <header class="sticky top-0 z-50 bg-cada-cream/95 backdrop-blur-md border-b border-cada-sage/20">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="block group" aria-label="CADA Concepts Home">
+                <img src="Images/cclogo.jpg" alt="CADA Concepts Logo" class="h-12 w-auto object-contain transition-all duration-300 group-hover:scale-105 group-hover:opacity-90">
+            </a>
 
-<a href="index.html" class="block group">
-    <img src="Images/cclogo.jpg" alt="CADA Concepts Logo" class="h-12 w-auto object-contain transition-all duration-300 group-hover:scale-105 group-hover:opacity-90">
-</a>
-
-            <nav class="hidden md:flex items-center space-x-8 text-xs font-heading font-medium tracking-widest uppercase text-cada-dark/80">
+            <!-- Primary Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-xs font-heading font-medium tracking-widest uppercase text-cada-dark/80" aria-label="Primary Navigation">
                 <a href="index.html" class="hover:text-cada-sage transition-colors">Home</a>
                 <a href="about.html" class="hover:text-cada-sage transition-colors">About</a>
                 <a href="services.html" class="hover:text-cada-sage transition-colors">Services</a>
                 <a href="process.html" class="hover:text-cada-sage transition-colors">Our Process</a>
                 <a href="industries.html" class="hover:text-cada-sage transition-colors">Industries</a>
-                <a href="portfolio.html" class="text-cada-sage border-b border-cada-sage">Portfolio</a>
+                <a href="portfolio.html" class="text-cada-sage border-b border-cada-sage" aria-current="page">Portfolio</a>
                 <a href="contact.html" class="hover:text-cada-sage transition-colors">Contact</a>
             </nav>
 
@@ -37,254 +43,255 @@
                 Start Your Project
             </a>
 
-            <!-- Mobile Menu Toggle -->
-            <button id="mobile-menu-toggle" class="md:hidden text-cada-dark focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-toggle" class="md:hidden text-cada-dark focus:outline-none" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle Navigation Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                 </svg>
             </button>
         </div>
 
-        <!-- Mobile Menu Nav -->
-        <div id="mobile-menu" class="hidden md:hidden bg-cada-cream border-b border-cada-sand px-6 py-4 space-y-3">
-            <a href="index.html" class="block text-xs font-heading uppercase tracking-widest text-cada-sage">Home</a>
+        <!-- Mobile Navigation Menu -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-cada-cream border-b border-cada-sand px-6 py-4 space-y-3" aria-label="Mobile Navigation">
+            <a href="index.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">Home</a>
             <a href="about.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">About</a>
             <a href="services.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">Services</a>
             <a href="process.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">Our Process</a>
             <a href="industries.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">Industries</a>
-            <a href="portfolio.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">Portfolio</a>
+            <a href="portfolio.html" class="block text-xs font-heading uppercase tracking-widest text-cada-sage" aria-current="page">Portfolio</a>
             <a href="contact.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">Contact</a>
-
-
-        </div>
+        </nav>
     </header>
 
-    <!-- 06 — PORTFOLIO GALLERY GRID (Images 1.jpg to 17.jpg) -->
-    <section id="portfolio" class="py-24 bg-cada-cream">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 space-y-12">
-            
-            <div class="text-center max-w-2xl mx-auto space-y-3">
-                <span class="text-xs font-accent tracking-widest text-cada-taupe uppercase block">06 — Portfolio</span>
-                <h2 class="font-serif text-3xl sm:text-5xl text-cada-dark">Our Selected Works</h2>
-                <p class="text-xs sm:text-sm text-cada-charcoal/70 font-light leading-relaxed">
-                    A showcase of our multidisciplinary projects across interior design, fit-out, event styling, branding, and perfume development.
-                </p>
+    <!-- Main Content Container -->
+    <main>
+        <!-- 06 — PORTFOLIO GALLERY GRID (Images 1.jpg to 17.jpg) -->
+        <section id="portfolio" class="py-24 bg-cada-cream" aria-labelledby="portfolio-heading">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12 space-y-12">
+                
+                <div class="text-center max-w-2xl mx-auto space-y-3">
+                    <span class="text-xs font-accent tracking-widest text-cada-taupe uppercase block">06 &mdash; Portfolio</span>
+                    <h1 id="portfolio-heading" class="font-serif text-3xl sm:text-5xl text-cada-dark">Our Selected Works</h1>
+                    <p class="text-xs sm:text-sm text-cada-charcoal/70 font-light leading-relaxed">
+                        A showcase of our multidisciplinary projects across interior design, fit-out, event styling, branding, and perfume development.
+                    </p>
+                </div>
+
+                <!-- Interactive Filter Tabs -->
+                <div class="flex flex-wrap justify-center gap-2 sm:gap-4 border-b border-cada-sand pb-4" role="tablist" aria-label="Portfolio Category Filters">
+                    <button class="filter-btn active px-4 py-2 text-xs font-accent tracking-wider uppercase border-b-2 border-cada-dark text-cada-dark transition-all" data-filter="all" role="tab" aria-selected="true">All</button>
+                    <button class="filter-btn px-4 py-2 text-xs font-accent tracking-wider uppercase border-b-2 border-transparent text-cada-charcoal/60 hover:text-cada-dark transition-all" data-filter="interior" role="tab" aria-selected="false">Interior &amp; Fit-Out</button>
+                    <button class="filter-btn px-4 py-2 text-xs font-accent tracking-wider uppercase border-b-2 border-transparent text-cada-charcoal/60 hover:text-cada-dark transition-all" data-filter="events" role="tab" aria-selected="false">Event Styling</button>
+                    <button class="filter-btn px-4 py-2 text-xs font-accent tracking-wider uppercase border-b-2 border-transparent text-cada-charcoal/60 hover:text-cada-dark transition-all" data-filter="branding" role="tab" aria-selected="false">Branding</button>
+                    <button class="filter-btn px-4 py-2 text-xs font-accent tracking-wider uppercase border-b-2 border-transparent text-cada-charcoal/60 hover:text-cada-dark transition-all" data-filter="perfume" role="tab" aria-selected="false">Perfumes</button>
+                </div>
+
+                <!-- Grid Items (1.jpg to 17.jpg) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- 1.jpg -->
+                    <article class="gallery-item interior bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" tabindex="0" aria-label="View Retail Framing Showroom project details" onclick="openModal('Images/1.jpg', 'Retail Framing Showroom', 'Turnkey Fit-Out')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { openModal('Images/1.jpg', 'Retail Framing Showroom', 'Turnkey Fit-Out'); }">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="Images/1.jpg" alt="Retail Framing Showroom Turnkey Fit-Out by CADA Concepts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Turnkey Fit-Out</span>
+                            <h2 class="font-serif text-base text-cada-dark">Retail Framing Showroom</h2>
+                        </div>
+                    </article>
+
+                    <!-- 2.jpg -->
+                    <article class="gallery-item interior bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" tabindex="0" aria-label="View Contemporary Residence &amp; Bedroom project details" onclick="openModal('Images/2.jpg', 'Contemporary Residence &amp; Bedroom', 'Interior Design')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { openModal('Images/2.jpg', 'Contemporary Residence &amp; Bedroom', 'Interior Design'); }">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="Images/2.jpg" alt="Contemporary Residence and Bedroom Interior Design by CADA Concepts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Interior Design</span>
+                            <h2 class="font-serif text-base text-cada-dark">Contemporary Residence &amp; Bedroom</h2>
+                        </div>
+                    </article>
+
+                    <!-- 3.jpg -->
+                    <article class="gallery-item interior bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" tabindex="0" aria-label="View Executive Office &amp; Joinery project details" onclick="openModal('Images/3.jpg', 'Executive Office &amp; Joinery', 'Turnkey Fit-Out')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { openModal('Images/3.jpg', 'Executive Office &amp; Joinery', 'Turnkey Fit-Out'); }">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="Images/3.jpg" alt="Executive Office and Custom Joinery Turnkey Fit-Out by CADA Concepts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Turnkey Fit-Out</span>
+                            <h2 class="font-serif text-base text-cada-dark">Executive Office &amp; Joinery</h2>
+                        </div>
+                    </article>
+
+                    <!-- 4.jpg -->
+                    <article class="gallery-item interior bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" tabindex="0" aria-label="View Luxury Living Feature Wall project details" onclick="openModal('Images/4.jpg', 'Luxury Living Feature Wall', 'Interior Design')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { openModal('Images/4.jpg', 'Luxury Living Feature Wall', 'Interior Design'); }">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="Images/4.jpg" alt="Luxury Living Room Feature Wall Interior Design by CADA Concepts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Interior Design</span>
+                            <h2 class="font-serif text-base text-cada-dark">Luxury Living Feature Wall</h2>
+                        </div>
+                    </article>
+
+                    <!-- 5.jpg -->
+                    <article class="gallery-item interior bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" tabindex="0" aria-label="View High-End Bathroom Showroom project details" onclick="openModal('Images/5.jpg', 'High-End Bathroom Showroom', 'Turnkey Fit-Out')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { openModal('Images/5.jpg', 'High-End Bathroom Showroom', 'Turnkey Fit-Out'); }">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="Images/5.jpg" alt="High-End Bathroom Showroom Turnkey Fit-Out by CADA Concepts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Turnkey Fit-Out</span>
+                            <h2 class="font-serif text-base text-cada-dark">High-End Bathroom Showroom</h2>
+                        </div>
+                    </article>
+
+                    <!-- 6.jpg -->
+                    <article class="gallery-item interior bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" tabindex="0" aria-label="View Corporate Exhibition Booth project details" onclick="openModal('Images/6.jpg', 'Corporate Exhibition Booth', 'Commercial Fit-Out')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { openModal('Images/6.jpg', 'Corporate Exhibition Booth', 'Commercial Fit-Out'); }">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="Images/6.jpg" alt="Corporate Exhibition Stand and Booth Commercial Fit-Out by CADA Concepts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Commercial Fit-Out</span>
+                            <h2 class="font-serif text-base text-cada-dark">Corporate Exhibition Booth</h2>
+                        </div>
+                    </article>
+
+                    <!-- 7.jpg -->
+                    <article class="gallery-item interior bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" tabindex="0" aria-label="View Strategic Scenic Installation project details" onclick="openModal('Images/7.jpg', 'Strategic Scenic Installation', 'Architectural')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { openModal('Images/7.jpg', 'Strategic Scenic Installation', 'Architectural'); }">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="Images/7.jpg" alt="Strategic Scenic Architectural Installation by CADA Concepts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Architectural</span>
+                            <h2 class="font-serif text-base text-cada-dark">Strategic Scenic Installation</h2>
+                        </div>
+                    </article>
+
+                    <!-- 8.jpg -->
+                    <article class="gallery-item perfume bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" tabindex="0" aria-label="View Fragrance Bottling &amp; Quality Control project details" onclick="openModal('Images/8.jpg', 'Fragrance Bottling &amp; Quality Control', 'Perfume Manufacturing')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { openModal('Images/8.jpg', 'Fragrance Bottling &amp; Quality Control', 'Perfume Manufacturing'); }">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="Images/8.jpg" alt="Fragrance Bottling and Quality Control Perfume Manufacturing by CADA Concepts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Perfume</span>
+                            <h2 class="font-serif text-base text-cada-dark">Fragrance Bottling &amp; Quality Control</h2>
+                        </div>
+                    </article>
+
+                    <!-- 9.jpg -->
+                    <article class="gallery-item branding bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" tabindex="0" aria-label="View Corporate Brand Collateral Suite project details" onclick="openModal('Images/9.jpg', 'Corporate Brand Collateral Suite', 'Branding')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { openModal('Images/9.jpg', 'Corporate Brand Collateral Suite', 'Branding'); }">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="Images/9.jpg" alt="Corporate Brand Identity and Stationery Collateral Suite by CADA Concepts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Branding</span>
+                            <h2 class="font-serif text-base text-cada-dark">Corporate Brand Collateral Suite</h2>
+                        </div>
+                    </article>
+
+                    <!-- 10.jpg -->
+                    <article class="gallery-item events bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" tabindex="0" aria-label="View Outdoor Wedding Floral Arch project details" onclick="openModal('Images/10.jpg', 'Outdoor Wedding Floral Arch', 'Event Decoration')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { openModal('Images/10.jpg', 'Outdoor Wedding Floral Arch', 'Event Decoration'); }">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="Images/10.jpg" alt="Outdoor Wedding Floral Arch Luxury Event Decoration by CADA Concepts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Event Decoration</span>
+                            <h2 class="font-serif text-base text-cada-dark">Outdoor Wedding Floral Arch</h2>
+                        </div>
+                    </article>
+
+                    <!-- 11.jpg -->
+                    <article class="gallery-item events bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" tabindex="0" aria-label="View Luxury Banquet Dining Styling project details" onclick="openModal('Images/11.jpg', 'Luxury Banquet Dining Styling', 'Event Decoration')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { openModal('Images/11.jpg', 'Luxury Banquet Dining Styling', 'Event Decoration'); }">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="Images/11.jpg" alt="Luxury Banquet Dining Table Styling and Floral Architecture by CADA Concepts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Event Decoration</span>
+                            <h2 class="font-serif text-base text-cada-dark">Luxury Banquet Dining Styling</h2>
+                        </div>
+                    </article>
+
+                    <!-- 12.jpg -->
+                    <article class="gallery-item perfume bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" tabindex="0" aria-label="View Botanical Fragrance Collection project details" onclick="openModal('Images/12.jpg', 'Botanical Fragrance Collection', 'Perfume Manufacturing')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { openModal('Images/12.jpg', 'Botanical Fragrance Collection', 'Perfume Manufacturing'); }">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="Images/12.jpg" alt="Botanical Fragrance Collection Private Label Perfume Development by CADA Concepts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Perfume</span>
+                            <h2 class="font-serif text-base text-cada-dark">Botanical Fragrance Collection</h2>
+                        </div>
+                    </article>
+
+                    <!-- 13.jpg -->
+                    <article class="gallery-item interior bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" tabindex="0" aria-label="View 3D Architectural Interior Rendering project details" onclick="openModal('Images/13.jpg', '3D Architectural Interior Rendering', 'Interior Design')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { openModal('Images/13.jpg', '3D Architectural Interior Rendering', 'Interior Design'); }">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="Images/13.jpg" alt="3D Architectural Interior Space Rendering by CADA Concepts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Interior Design</span>
+                            <h2 class="font-serif text-base text-cada-dark">3D Architectural Interior Rendering</h2>
+                        </div>
+                    </article>
+
+                    <!-- 14.jpg -->
+                    <article class="gallery-item interior bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" tabindex="0" aria-label="View Modern Neutral Apartment Living project details" onclick="openModal('Images/14.jpg', 'Modern Neutral Apartment Living', 'Interior Design')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { openModal('Images/14.jpg', 'Modern Neutral Apartment Living', 'Interior Design'); }">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="Images/14.jpg" alt="Modern Neutral Toned Apartment Living Interior Design by CADA Concepts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Interior Design</span>
+                            <h2 class="font-serif text-base text-cada-dark">Modern Neutral Apartment Living</h2>
+                        </div>
+                    </article>
+
+                    <!-- 15.jpg -->
+                    <article class="gallery-item perfume bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" tabindex="0" aria-label="View Minimalist Fragrance Bottle Suite project details" onclick="openModal('Images/15.jpg', 'Minimalist Fragrance Bottle Suite', 'Perfume Manufacturing')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { openModal('Images/15.jpg', 'Minimalist Fragrance Bottle Suite', 'Perfume Manufacturing'); }">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="Images/15.jpg" alt="Minimalist Luxury Perfume Glass Bottle Suite Design by CADA Concepts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Perfume</span>
+                            <h2 class="font-serif text-base text-cada-dark">Minimalist Fragrance Bottle Suite</h2>
+                        </div>
+                    </article>
+
+                    <!-- 16.jpg -->
+                    <article class="gallery-item perfume bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" tabindex="0" aria-label="View Private Label Perfume Showcase project details" onclick="openModal('Images/16.jpg', 'Private Label Perfume Showcase', 'Perfume Manufacturing')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { openModal('Images/16.jpg', 'Private Label Perfume Showcase', 'Perfume Manufacturing'); }">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="Images/16.jpg" alt="Private Label Perfume Display Showcase by CADA Concepts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Perfume</span>
+                            <h2 class="font-serif text-base text-cada-dark">Private Label Perfume Showcase</h2>
+                        </div>
+                    </article>
+
+                    <!-- 17.jpg -->
+                    <article class="gallery-item branding bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" tabindex="0" aria-label="View Collaborative Team Design Studio project details" onclick="openModal('Images/17.jpg', 'Collaborative Team Design Studio', 'Branding &amp; Creative')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { openModal('Images/17.jpg', 'Collaborative Team Design Studio', 'Branding &amp; Creative'); }">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="Images/17.jpg" alt="Collaborative Multidisciplinary Creative Team Studio Space at CADA Concepts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 space-y-1">
+                            <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Branding &amp; Creative</span>
+                            <h2 class="font-serif text-base text-cada-dark">Collaborative Team Design Studio</h2>
+                        </div>
+                    </article>
+
+                </div>
             </div>
+        </section>
 
-            <!-- Interactive Filter Tabs -->
-            <div class="flex flex-wrap justify-center gap-2 sm:gap-4 border-b border-cada-sand pb-4">
-                <button class="filter-btn active px-4 py-2 text-xs font-accent tracking-wider uppercase border-b-2 border-cada-dark text-cada-dark transition-all" data-filter="all">All</button>
-                <button class="filter-btn px-4 py-2 text-xs font-accent tracking-wider uppercase border-b-2 border-transparent text-cada-charcoal/60 hover:text-cada-dark transition-all" data-filter="interior">Interior & Fit-Out</button>
-                <button class="filter-btn px-4 py-2 text-xs font-accent tracking-wider uppercase border-b-2 border-transparent text-cada-charcoal/60 hover:text-cada-dark transition-all" data-filter="events">Event Styling</button>
-                <button class="filter-btn px-4 py-2 text-xs font-accent tracking-wider uppercase border-b-2 border-transparent text-cada-charcoal/60 hover:text-cada-dark transition-all" data-filter="branding">Branding</button>
-                <button class="filter-btn px-4 py-2 text-xs font-accent tracking-wider uppercase border-b-2 border-transparent text-cada-charcoal/60 hover:text-cada-dark transition-all" data-filter="perfume">Perfumes</button>
-            </div>
-
-            <!-- Grid Items (1.jpg to 17.jpg) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- 1.jpg -->
-                <div class="gallery-item interior bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" onclick="openModal('Images/1.jpg', 'Retail Framing Showroom', 'Turnkey Fit-Out')">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="Images/1.jpg" alt="Retail Framing Showroom" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 space-y-1">
-                        <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Turnkey Fit-Out</span>
-                        <h4 class="font-serif text-base text-cada-dark">Retail Framing Showroom</h4>
-                    </div>
+        <!-- Modal Lightbox Dialog -->
+        <div id="image-modal" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="relative bg-white max-w-3xl w-full p-4 space-y-3">
+                <button onclick="closeModal()" class="absolute top-2 right-2 text-cada-dark hover:text-cada-sage text-2xl font-bold" aria-label="Close modal dialog">&times;</button>
+                <img id="modal-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3C/svg%3E" alt="Expanded Portfolio Project Preview" class="w-full h-[70vh] object-contain">
+                <div class="space-y-1 text-center">
+                    <span id="modal-category" class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block"></span>
+                    <h2 id="modal-title" class="font-serif text-lg text-cada-dark"></h2>
                 </div>
-
-                <!-- 2.jpg -->
-                <div class="gallery-item interior bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" onclick="openModal('Images/2.jpg', 'Contemporary Residence & Bedroom', 'Interior Design')">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="Images/2.jpg" alt="Contemporary Residence & Bedroom" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 space-y-1">
-                        <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Interior Design</span>
-                        <h4 class="font-serif text-base text-cada-dark">Contemporary Residence & Bedroom</h4>
-                    </div>
-                </div>
-
-                <!-- 3.jpg -->
-                <div class="gallery-item interior bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" onclick="openModal('Images/3.jpg', 'Executive Office & Joinery', 'Turnkey Fit-Out')">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="Images/3.jpg" alt="Executive Office & Joinery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 space-y-1">
-                        <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Turnkey Fit-Out</span>
-                        <h4 class="font-serif text-base text-cada-dark">Executive Office & Joinery</h4>
-                    </div>
-                </div>
-
-                <!-- 4.jpg -->
-                <div class="gallery-item interior bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" onclick="openModal('Images/4.jpg', 'Luxury Living Feature Wall', 'Interior Design')">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="Images/4.jpg" alt="Luxury Living Feature Wall" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 space-y-1">
-                        <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Interior Design</span>
-                        <h4 class="font-serif text-base text-cada-dark">Luxury Living Feature Wall</h4>
-                    </div>
-                </div>
-
-                <!-- 5.jpg -->
-                <div class="gallery-item interior bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" onclick="openModal('Images/5.jpg', 'High-End Bathroom Showroom', 'Turnkey Fit-Out')">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="Images/5.jpg" alt="High-End Bathroom Showroom" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 space-y-1">
-                        <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Turnkey Fit-Out</span>
-                        <h4 class="font-serif text-base text-cada-dark">High-End Bathroom Showroom</h4>
-                    </div>
-                </div>
-
-                <!-- 6.jpg -->
-                <div class="gallery-item interior bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" onclick="openModal('Images/6.jpg', 'Corporate Exhibition Booth', 'Commercial Fit-Out')">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="Images/6.jpg" alt="Corporate Exhibition Booth" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 space-y-1">
-                        <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Commercial Fit-Out</span>
-                        <h4 class="font-serif text-base text-cada-dark">Corporate Exhibition Booth</h4>
-                    </div>
-                </div>
-
-                <!-- 7.jpg -->
-                <div class="gallery-item interior bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" onclick="openModal('Images/7.jpg', 'Strategic Scenic Installation', 'Architectural')">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="Images/7.jpg" alt="Strategic Scenic Installation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 space-y-1">
-                        <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Architectural</span>
-                        <h4 class="font-serif text-base text-cada-dark">Strategic Scenic Installation</h4>
-                    </div>
-                </div>
-
-                <!-- 8.jpg -->
-                <div class="gallery-item perfume bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" onclick="openModal('Images/8.jpg', 'Fragrance Bottling & Quality Control', 'Perfume Manufacturing')">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="Images/8.jpg" alt="Fragrance Bottling & Quality Control" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 space-y-1">
-                        <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Perfume</span>
-                        <h4 class="font-serif text-base text-cada-dark">Fragrance Bottling & Quality Control</h4>
-                    </div>
-                </div>
-
-                <!-- 9.jpg -->
-                <div class="gallery-item branding bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" onclick="openModal('Images/9.jpg', 'Corporate Brand Collateral Suite', 'Branding')">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="Images/9.jpg" alt="Corporate Brand Collateral Suite" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 space-y-1">
-                        <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Branding</span>
-                        <h4 class="font-serif text-base text-cada-dark">Corporate Brand Collateral Suite</h4>
-                    </div>
-                </div>
-
-                <!-- 10.jpg -->
-                <div class="gallery-item events bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" onclick="openModal('Images/10.jpg', 'Outdoor Wedding Floral Arch', 'Event Decoration')">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="Images/10.jpg" alt="Outdoor Wedding Floral Arch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 space-y-1">
-                        <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Event Decoration</span>
-                        <h4 class="font-serif text-base text-cada-dark">Outdoor Wedding Floral Arch</h4>
-                    </div>
-                </div>
-
-                <!-- 11.jpg -->
-                <div class="gallery-item events bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" onclick="openModal('Images/11.jpg', 'Luxury Banquet Dining Styling', 'Event Decoration')">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="Images/11.jpg" alt="Luxury Banquet Dining Styling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 space-y-1">
-                        <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Event Decoration</span>
-                        <h4 class="font-serif text-base text-cada-dark">Luxury Banquet Dining Styling</h4>
-                    </div>
-                </div>
-
-                <!-- 12.jpg -->
-                <div class="gallery-item perfume bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" onclick="openModal('Images/12.jpg', 'Botanical Fragrance Collection', 'Perfume Manufacturing')">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="Images/12.jpg" alt="Botanical Fragrance Collection" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 space-y-1">
-                        <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Perfume</span>
-                        <h4 class="font-serif text-base text-cada-dark">Botanical Fragrance Collection</h4>
-                    </div>
-                </div>
-
-                <!-- 13.jpg -->
-                <div class="gallery-item interior bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" onclick="openModal('Images/13.jpg', '3D Architectural Interior Rendering', 'Interior Design')">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="Images/13.jpg" alt="3D Architectural Interior Rendering" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 space-y-1">
-                        <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Interior Design</span>
-                        <h4 class="font-serif text-base text-cada-dark">3D Architectural Interior Rendering</h4>
-                    </div>
-                </div>
-
-                <!-- 14.jpg -->
-                <div class="gallery-item interior bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" onclick="openModal('Images/14.jpg', 'Modern Neutral Apartment Living', 'Interior Design')">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="Images/14.jpg" alt="Modern Neutral Apartment Living" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 space-y-1">
-                        <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Interior Design</span>
-                        <h4 class="font-serif text-base text-cada-dark">Modern Neutral Apartment Living</h4>
-                    </div>
-                </div>
-
-                <!-- 15.jpg -->
-                <div class="gallery-item perfume bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" onclick="openModal('Images/15.jpg', 'Minimalist Fragrance Bottle Suite', 'Perfume Manufacturing')">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="Images/15.jpg" alt="Minimalist Fragrance Bottle Suite" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 space-y-1">
-                        <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Perfume</span>
-                        <h4 class="font-serif text-base text-cada-dark">Minimalist Fragrance Bottle Suite</h4>
-                    </div>
-                </div>
-
-                <!-- 16.jpg -->
-                <div class="gallery-item perfume bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" onclick="openModal('Images/16.jpg', 'Private Label Perfume Showcase', 'Perfume Manufacturing')">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="Images/16.jpg" alt="Private Label Perfume Showcase" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 space-y-1">
-                        <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Perfume</span>
-                        <h4 class="font-serif text-base text-cada-dark">Private Label Perfume Showcase</h4>
-                    </div>
-                </div>
-
-                <!-- 17.jpg -->
-                <div class="gallery-item branding bg-cada-cream border border-cada-sand overflow-hidden group cursor-pointer" onclick="openModal('Images/17.jpg', 'Collaborative Team Design Studio', 'Branding & Creative')">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="Images/17.jpg" alt="Collaborative Team Design Studio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 space-y-1">
-                        <span class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block">Branding & Creative</span>
-                        <h4 class="font-serif text-base text-cada-dark">Collaborative Team Design Studio</h4>
-                    </div>
-                </div>
-
             </div>
         </div>
-    </section>
-
-    <!-- Modal Lightbox -->
-    <div id="image-modal" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center p-4">
-        <div class="relative bg-white max-w-3xl w-full p-4 space-y-3">
-            <button onclick="closeModal()" class="absolute top-2 right-2 text-cada-dark hover:text-cada-sage text-2xl font-bold">&times;</button>
-            <img id="modal-img" src="" alt="" class="w-full h-[70vh] object-contain">
-            <div class="space-y-1 text-center">
-                <span id="modal-category" class="text-[10px] font-accent uppercase text-cada-sage tracking-wider block"></span>
-                <h3 id="modal-title" class="font-serif text-lg text-cada-dark"></h3>
-            </div>
-        </div>
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-cada-dark text-cada-cream py-12">
@@ -293,48 +300,8 @@
         </div>
     </footer>
 
-    <!-- Filter & Lightbox JavaScript -->
-    <script>
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const galleryItems = document.querySelectorAll('.gallery-item');
-
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterBtns.forEach(b => {
-                    b.classList.remove('active', 'border-cada-dark', 'text-cada-dark');
-                    b.classList.add('border-transparent', 'text-cada-charcoal/60');
-                });
-                btn.classList.add('active', 'border-cada-dark', 'text-cada-dark');
-                btn.classList.remove('border-transparent', 'text-cada-charcoal/60');
-
-                const filter = btn.getAttribute('data-filter');
-                galleryItems.forEach(item => {
-                    if (filter === 'all' || item.classList.contains(filter)) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            });
-        });
-
-        function openModal(imgSrc, title, category) {
-            document.getElementById('modal-img').src = imgSrc;
-            document.getElementById('modal-title').innerText = title;
-            document.getElementById('modal-category').innerText = category;
-            document.getElementById('image-modal').classList.remove('hidden');
-        }
-
-        function closeModal() {
-            document.getElementById('image-modal').classList.add('hidden');
-        }
-    </script>
-
-    <script>
-        document.getElementById('mobile-menu-toggle')?.addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    </script>
+    <!-- Shared Interactivity Script -->
+    <script src="js/main.js"></script>
 
 </body>
 </html>
