@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the methodical 5-step approach CADA Concepts takes from concept initiation to flawless completion for interior design, fit-out, branding, and fragrance projects in Dubai.">
     <title>CADA Concepts | Our Process</title>
-    
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
+    <!-- Tailwind CSS CDN & Custom Config -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="tailwind-config.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <script src="js/tailwind-config.js"></script>
+
+    <!-- External Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-cada-cream text-cada-charcoal font-body antialiased selection:bg-cada-sage selection:text-white zen-bg-pattern">
 
     <!-- Header Navigation -->
     <header class="sticky top-0 z-50 bg-cada-cream/95 backdrop-blur-md border-b border-cada-sage/20">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="block group" aria-label="CADA Concepts Home">
+                <img src="Images/cclogo.jpg" alt="CADA Concepts Logo" class="h-12 w-auto object-contain transition-all duration-300 group-hover:scale-105 group-hover:opacity-90">
+            </a>
 
-<a href="index.html" class="block group">
-    <img src="Images/cclogo.jpg" alt="CADA Concepts Logo" class="h-12 w-auto object-contain transition-all duration-300 group-hover:scale-105 group-hover:opacity-90">
-</a>
-
-            <nav class="hidden md:flex items-center space-x-8 text-xs font-heading font-medium tracking-widest uppercase text-cada-dark/80">
+            <!-- Primary Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8 text-xs font-heading font-medium tracking-widest uppercase text-cada-dark/80" aria-label="Main Navigation">
                 <a href="index.html" class="hover:text-cada-sage transition-colors">Home</a>
                 <a href="about.html" class="hover:text-cada-sage transition-colors">About</a>
                 <a href="services.html" class="hover:text-cada-sage transition-colors">Services</a>
-                <a href="process.html" class="text-cada-sage border-b border-cada-sage">Our Process</a>
+                <a href="process.html" class="text-cada-sage border-b border-cada-sage" aria-current="page">Our Process</a>
                 <a href="industries.html" class="hover:text-cada-sage transition-colors">Industries</a>
                 <a href="portfolio.html" class="hover:text-cada-sage transition-colors">Portfolio</a>
                 <a href="contact.html" class="hover:text-cada-sage transition-colors">Contact</a>
@@ -37,88 +43,88 @@
                 Start Your Project
             </a>
 
-            <!-- Mobile Menu Toggle -->
-            <button id="mobile-menu-toggle" class="md:hidden text-cada-dark focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-toggle" class="md:hidden text-cada-dark focus:outline-none" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle Navigation Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                 </svg>
             </button>
         </div>
 
-        <!-- Mobile Menu Nav -->
-        <div id="mobile-menu" class="hidden md:hidden bg-cada-cream border-b border-cada-sand px-6 py-4 space-y-3">
-            <a href="index.html" class="block text-xs font-heading uppercase tracking-widest text-cada-sage">Home</a>
+        <!-- Mobile Menu Navigation -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-cada-cream border-b border-cada-sand px-6 py-4 space-y-3" aria-label="Mobile Navigation">
+            <a href="index.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">Home</a>
             <a href="about.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">About</a>
             <a href="services.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">Services</a>
-            <a href="process.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">Our Process</a>
+            <a href="process.html" class="block text-xs font-heading uppercase tracking-widest text-cada-sage" aria-current="page">Our Process</a>
             <a href="industries.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">Industries</a>
             <a href="portfolio.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">Portfolio</a>
             <a href="contact.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">Contact</a>
-
-
-        </div>
+        </nav>
     </header>
 
-    <!-- 04 — OUR PROCESS -->
-    <section id="process" class="py-24 bg-white border-b border-cada-sand">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 space-y-16">
-            <div class="text-center max-w-2xl mx-auto space-y-3">
-                <span class="text-xs font-accent tracking-widest text-cada-taupe uppercase block">04 — Methodology</span>
-                <h2 class="font-serif text-3xl sm:text-5xl text-cada-dark">A Methodical Approach to Excellence</h2>
-                <p class="text-xs sm:text-sm text-cada-charcoal/70 font-light leading-relaxed">
-                    How we take a project from concept initiation to flawless completion.
-                </p>
+    <!-- Main Content Container -->
+    <main>
+        <!-- 04 — OUR PROCESS SECTION -->
+        <section id="process" class="py-24 bg-white border-b border-cada-sand" aria-labelledby="process-heading">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12 space-y-16">
+                <div class="text-center max-w-2xl mx-auto space-y-3">
+                    <span class="text-xs font-accent tracking-widest text-cada-taupe uppercase block">04 — Methodology</span>
+                    <h1 id="process-heading" class="font-serif text-3xl sm:text-5xl text-cada-dark">A Methodical Approach to Excellence</h1>
+                    <p class="text-xs sm:text-sm text-cada-charcoal/70 font-light leading-relaxed">
+                        How we take a project from concept initiation to flawless completion.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 relative">
+                    <!-- Step 1 -->
+                    <article class="space-y-4 p-6 bg-cada-cream border border-cada-sand relative">
+                        <span class="font-serif text-4xl text-cada-sage block" aria-hidden="true">01</span>
+                        <h2 class="font-serif text-lg text-cada-dark">Discovery &amp; Briefing</h2>
+                        <p class="text-xs text-cada-charcoal/70 leading-relaxed font-light">
+                            Understanding client aspirations, spatial parameters, brand ethos, and operational objectives in Dubai and global contexts.
+                        </p>
+                    </article>
+
+                    <!-- Step 2 -->
+                    <article class="space-y-4 p-6 bg-cada-cream border border-cada-sand relative">
+                        <span class="font-serif text-4xl text-cada-sage block" aria-hidden="true">02</span>
+                        <h2 class="font-serif text-lg text-cada-dark">Concept &amp; Strategy</h2>
+                        <p class="text-xs text-cada-charcoal/70 leading-relaxed font-light">
+                            Developing 3D mood layouts, material samples, brand collateral drafts, and fragrance note profiles for approval.
+                        </p>
+                    </article>
+
+                    <!-- Step 3 -->
+                    <article class="space-y-4 p-6 bg-cada-cream border border-cada-sand relative">
+                        <span class="font-serif text-4xl text-cada-sage block" aria-hidden="true">03</span>
+                        <h2 class="font-serif text-lg text-cada-dark">Detailed Engineering</h2>
+                        <p class="text-xs text-cada-charcoal/70 leading-relaxed font-light">
+                            Finalizing technical fit-out drawings, MEP plans, print production files, floral sourcing, and perfume lab formulations.
+                        </p>
+                    </article>
+
+                    <!-- Step 4 -->
+                    <article class="space-y-4 p-6 bg-cada-cream border border-cada-sand relative">
+                        <span class="font-serif text-4xl text-cada-sage block" aria-hidden="true">04</span>
+                        <h2 class="font-serif text-lg text-cada-dark">Execution &amp; Handover</h2>
+                        <p class="text-xs text-cada-charcoal/70 leading-relaxed font-light">
+                            On-site fit-out management, event installation, brand deployment, and final quality assurance for handover.
+                        </p>
+                    </article>
+
+                    <!-- Step 5 -->
+                    <article class="space-y-4 p-6 bg-cada-cream border border-cada-sand relative">
+                        <span class="font-serif text-4xl text-cada-sage block" aria-hidden="true">05</span>
+                        <h2 class="font-serif text-lg text-cada-dark">Completion</h2>
+                        <p class="text-xs text-cada-charcoal/70 leading-relaxed font-light">
+                            We conduct the final inspection, complete the handover, and provide continued support after project completion.
+                        </p>
+                    </article>
+                </div>
             </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 relative">
-                <!-- Step 1 -->
-                <div class="space-y-4 p-6 bg-cada-cream border border-cada-sand relative">
-                    <span class="font-serif text-4xl text-cada-sage block">01</span>
-                    <h4 class="font-serif text-lg text-cada-dark">Discovery & Briefing</h4>
-                    <p class="text-xs text-cada-charcoal/70 leading-relaxed font-light">
-                        Understanding client aspirations, spatial parameters, brand ethos, and operational objectives in Dubai and global contexts.
-                    </p>
-                </div>
-
-                <!-- Step 2 -->
-                <div class="space-y-4 p-6 bg-cada-cream border border-cada-sand relative">
-                    <span class="font-serif text-4xl text-cada-sage block">02</span>
-                    <h4 class="font-serif text-lg text-cada-dark">Concept & Strategy</h4>
-                    <p class="text-xs text-cada-charcoal/70 leading-relaxed font-light">
-                        Developing 3D mood layouts, material samples, brand collateral drafts, and fragrance note profiles for approval.
-                    </p>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="space-y-4 p-6 bg-cada-cream border border-cada-sand relative">
-                    <span class="font-serif text-4xl text-cada-sage block">03</span>
-                    <h4 class="font-serif text-lg text-cada-dark">Detailed Engineering</h4>
-                    <p class="text-xs text-cada-charcoal/70 leading-relaxed font-light">
-                        Finalizing technical fit-out drawings, MEP plans, print production files, floral sourcing, and perfume lab formulations.
-                    </p>
-                </div>
-
-                <!-- Step 4 -->
-                <div class="space-y-4 p-6 bg-cada-cream border border-cada-sand relative">
-                    <span class="font-serif text-4xl text-cada-sage block">04</span>
-                    <h4 class="font-serif text-lg text-cada-dark">Execution & Handover</h4>
-                    <p class="text-xs text-cada-charcoal/70 leading-relaxed font-light">
-                        On-site fit-out management, event installation, brand deployment, and final quality assurance for handover.
-                    </p>
-                </div>
-
-                <!-- Step 5 -->
-                <div class="space-y-4 p-6 bg-cada-cream border border-cada-sand relative">
-                    <span class="font-serif text-4xl text-cada-sage block">05</span>
-                    <h4 class="font-serif text-lg text-cada-dark">Completion</h4>
-                    <p class="text-xs text-cada-charcoal/70 leading-relaxed font-light">
-                        We conduct the final inspection, complete the handover, and provide continued support after project completion.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-cada-dark text-cada-cream py-12">
@@ -127,11 +133,8 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('mobile-menu-toggle')?.addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    </script>
+    <!-- Main Interactivity Script -->
+    <script src="js/main.js"></script>
 
 </body>
 </html>
