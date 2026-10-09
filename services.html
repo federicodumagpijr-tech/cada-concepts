@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the core service pillars of CADA Concepts in Dubai, UAE: Interior Design & Fit-Out, Brand Identity Development, Event Styling & Floral Architecture, and Private Label Perfume Manufacturing.">
     <title>CADA Concepts | Services</title>
-    
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
+    <!-- Tailwind CSS CDN & Custom Config -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="tailwind-config.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <script src="js/tailwind-config.js"></script>
+
+    <!-- External Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-cada-cream text-cada-charcoal font-body antialiased selection:bg-cada-sage selection:text-white zen-bg-pattern">
 
     <!-- Header Navigation -->
     <header class="sticky top-0 z-50 bg-cada-cream/95 backdrop-blur-md border-b border-cada-sage/20">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="block group" aria-label="CADA Concepts Home">
+                <img src="Images/cclogo.jpg" alt="CADA Concepts Logo" class="h-12 w-auto object-contain transition-all duration-300 group-hover:scale-105 group-hover:opacity-90">
+            </a>
 
-<a href="index.html" class="block group">
-    <img src="Images/cclogo.jpg" alt="CADA Concepts Logo" class="h-12 w-auto object-contain transition-all duration-300 group-hover:scale-105 group-hover:opacity-90">
-</a>
-
-            <nav class="hidden md:flex items-center space-x-8 text-xs font-heading font-medium tracking-widest uppercase text-cada-dark/80">
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8 text-xs font-heading font-medium tracking-widest uppercase text-cada-dark/80" aria-label="Primary Navigation">
                 <a href="index.html" class="hover:text-cada-sage transition-colors">Home</a>
                 <a href="about.html" class="hover:text-cada-sage transition-colors">About</a>
-                <a href="services.html" class="text-cada-sage border-b border-cada-sage">Services</a>
+                <a href="services.html" class="text-cada-sage border-b border-cada-sage" aria-current="page">Services</a>
                 <a href="process.html" class="hover:text-cada-sage transition-colors">Our Process</a>
                 <a href="industries.html" class="hover:text-cada-sage transition-colors">Industries</a>
                 <a href="portfolio.html" class="hover:text-cada-sage transition-colors">Portfolio</a>
@@ -37,118 +43,119 @@
                 Start Your Project
             </a>
 
-            <!-- Mobile Menu Toggle -->
-            <button id="mobile-menu-toggle" class="md:hidden text-cada-dark focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-toggle" class="md:hidden text-cada-dark focus:outline-none" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle Navigation Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                 </svg>
             </button>
         </div>
 
-        <!-- Mobile Menu Nav -->
-        <div id="mobile-menu" class="hidden md:hidden bg-cada-cream border-b border-cada-sand px-6 py-4 space-y-3">
-            <a href="index.html" class="block text-xs font-heading uppercase tracking-widest text-cada-sage">Home</a>
+        <!-- Mobile Navigation Menu -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-cada-cream border-b border-cada-sand px-6 py-4 space-y-3" aria-label="Mobile Navigation">
+            <a href="index.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">Home</a>
             <a href="about.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">About</a>
-            <a href="services.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">Services</a>
+            <a href="services.html" class="block text-xs font-heading uppercase tracking-widest text-cada-sage" aria-current="page">Services</a>
             <a href="process.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">Our Process</a>
             <a href="industries.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">Industries</a>
             <a href="portfolio.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">Portfolio</a>
             <a href="contact.html" class="block text-xs font-heading uppercase tracking-widest text-cada-dark">Contact</a>
-
-
-        </div>
+        </nav>
     </header>
 
-    <!-- 03 — SERVICES OVERVIEW -->
-    <section id="services" class="py-24 bg-cada-cream">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 space-y-16">
-            <div class="text-center max-w-2xl mx-auto space-y-3">
-                <span class="text-xs font-accent tracking-widest text-cada-taupe uppercase block">03 — Our Expertise</span>
-                <h2 class="font-serif text-3xl sm:text-5xl text-cada-dark">Core Service Pillars</h2>
-                <p class="text-xs sm:text-sm text-cada-charcoal/70 font-light leading-relaxed">
-                    Four specialized divisions operating under one refined creative direction to execute end-to-end luxury solutions.
-                </p>
+    <!-- Main Content Container -->
+    <main>
+        <!-- 03 — SERVICES OVERVIEW -->
+        <section id="services" class="py-24 bg-cada-cream" aria-labelledby="services-heading">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12 space-y-16">
+                <div class="text-center max-w-2xl mx-auto space-y-3">
+                    <span class="text-xs font-accent tracking-widest text-cada-taupe uppercase block">03 &mdash; Our Expertise</span>
+                    <h1 id="services-heading" class="font-serif text-3xl sm:text-5xl text-cada-dark">Core Service Pillars</h1>
+                    <p class="text-xs sm:text-sm text-cada-charcoal/70 font-light leading-relaxed">
+                        Four specialized divisions operating under one refined creative direction to execute end-to-end luxury solutions.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Service 1: Interior Design & Turnkey Fit-Out -->
+                    <article class="bg-white border border-cada-sand p-8 space-y-6 hover:border-cada-sage transition-all duration-300 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="h-48 overflow-hidden relative">
+                                <img src="Images/14.jpg" alt="Modern Neutral Residential Interior Design by CADA Concepts" class="w-full h-full object-cover">
+                            </div>
+                            <span class="text-xs font-accent uppercase text-cada-sage tracking-widest block">Pillar 01</span>
+                            <h2 class="font-serif text-2xl text-cada-dark">Interior Design &amp; Turnkey Fit-Out</h2>
+                            <p class="text-xs text-cada-charcoal/80 leading-relaxed font-light">
+                                Complete residential, commercial, executive office, and retail space transformation. From concept renderings to joinery, mechanical, electrical, and MEP coordination.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-cada-charcoal/70 space-y-2 font-light border-t border-cada-sand pt-4">
+                            <li class="flex items-center gap-2"><span class="text-cada-sage" aria-hidden="true">&bull;</span> Spatial Planning &amp; 3D Architectural Visualisation</li>
+                            <li class="flex items-center gap-2"><span class="text-cada-sage" aria-hidden="true">&bull;</span> Commercial Showrooms &amp; Executive Workspace Fit-Outs</li>
+                            <li class="flex items-center gap-2"><span class="text-cada-sage" aria-hidden="true">&bull;</span> Luxury Residential Living &amp; Bedroom Styling</li>
+                        </ul>
+                    </article>
+
+                    <!-- Service 2: Brand Identity Development -->
+                    <article class="bg-white border border-cada-sand p-8 space-y-6 hover:border-cada-sage transition-all duration-300 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="h-48 overflow-hidden relative">
+                                <img src="Images/9.jpg" alt="Corporate Brand Identity Collateral Suite Design by CADA Concepts" class="w-full h-full object-cover">
+                            </div>
+                            <span class="text-xs font-accent uppercase text-cada-sage tracking-widest block">Pillar 02</span>
+                            <h2 class="font-serif text-2xl text-cada-dark">Brand Identity Development</h2>
+                            <p class="text-xs text-cada-charcoal/80 leading-relaxed font-light">
+                                Crafting distinguished visual identities for corporate entities and consumer brands. We align brand positioning with tangible aesthetics across digital and print collateral.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-cada-charcoal/70 space-y-2 font-light border-t border-cada-sand pt-4">
+                            <li class="flex items-center gap-2"><span class="text-cada-sage" aria-hidden="true">&bull;</span> Brand Strategy &amp; Visual Identity Systems</li>
+                            <li class="flex items-center gap-2"><span class="text-cada-sage" aria-hidden="true">&bull;</span> Premium Stationery, Packaging &amp; Collateral Suites</li>
+                            <li class="flex items-center gap-2"><span class="text-cada-sage" aria-hidden="true">&bull;</span> Brand Guidelines &amp; Architectural Integration</li>
+                        </ul>
+                    </article>
+
+                    <!-- Service 3: Event Styling & Floral Architecture -->
+                    <article class="bg-white border border-cada-sand p-8 space-y-6 hover:border-cada-sage transition-all duration-300 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="h-48 overflow-hidden relative">
+                                <img src="Images/10.jpg" alt="Luxury Wedding Arch with White Florals by CADA Concepts" class="w-full h-full object-cover">
+                            </div>
+                            <span class="text-xs font-accent uppercase text-cada-sage tracking-widest block">Pillar 03</span>
+                            <h2 class="font-serif text-2xl text-cada-dark">Event Styling &amp; Floral Architecture</h2>
+                            <p class="text-xs text-cada-charcoal/80 leading-relaxed font-light">
+                                High-concept spatial decoration for VIP weddings, corporate galas, and bespoke brand pop-ups. Transforming bare venues into unforgettable visual atmospheres.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-cada-charcoal/70 space-y-2 font-light border-t border-cada-sand pt-4">
+                            <li class="flex items-center gap-2"><span class="text-cada-sage" aria-hidden="true">&bull;</span> Wedding Floral Structures &amp; Ceremony Arches</li>
+                            <li class="flex items-center gap-2"><span class="text-cada-sage" aria-hidden="true">&bull;</span> Opulent Banquet Table Design &amp; Lighting Setup</li>
+                            <li class="flex items-center gap-2"><span class="text-cada-sage" aria-hidden="true">&bull;</span> Corporate Gala &amp; Exhibition Stage Scenography</li>
+                        </ul>
+                    </article>
+
+                    <!-- Service 4: Private Label Perfume Manufacturing -->
+                    <article class="bg-white border border-cada-sand p-8 space-y-6 hover:border-cada-sage transition-all duration-300 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="h-48 overflow-hidden relative">
+                                <img src="Images/16.jpg" alt="Private Label Perfume Promotional Showcase by CADA Concepts" class="w-full h-full object-cover">
+                            </div>
+                            <span class="text-xs font-accent uppercase text-cada-sage tracking-widest block">Pillar 04</span>
+                            <h2 class="font-serif text-2xl text-cada-dark">Private Label Perfume Manufacturing</h2>
+                            <p class="text-xs text-cada-charcoal/80 leading-relaxed font-light">
+                                Turnkey fragrance development for boutique brands, corporate gifting, and luxury hospitality. Fragrance formulation, bottle design, and regulatory packaging.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-cada-charcoal/70 space-y-2 font-light border-t border-cada-sand pt-4">
+                            <li class="flex items-center gap-2"><span class="text-cada-sage" aria-hidden="true">&bull;</span> Olfactory Formulation &amp; Custom Fragrance Sourcing</li>
+                            <li class="flex items-center gap-2"><span class="text-cada-sage" aria-hidden="true">&bull;</span> Luxury Glass Bottle Tooling &amp; Packaging Manufacturing</li>
+                            <li class="flex items-center gap-2"><span class="text-cada-sage" aria-hidden="true">&bull;</span> End-to-End Quality Control &amp; Bottling Production</li>
+                        </ul>
+                    </article>
+                </div>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Service 1: Interior Design & Turnkey Fit-Out -->
-                <div class="bg-white border border-cada-sand p-8 space-y-6 hover:border-cada-sage transition-all duration-300 flex flex-col justify-between">
-                    <div class="space-y-4">
-                        <div class="h-48 overflow-hidden relative">
-                            <img src="Images/14.jpg" alt="Modern Neutral Residential Interior Design" class="w-full h-full object-cover">
-                        </div>
-                        <span class="text-xs font-accent uppercase text-cada-sage tracking-widest block">Pillar 01</span>
-                        <h3 class="font-serif text-2xl text-cada-dark">Interior Design & Turnkey Fit-Out</h3>
-                        <p class="text-xs text-cada-charcoal/80 leading-relaxed font-light">
-                            Complete residential, commercial, executive office, and retail space transformation. From concept renderings to joinery, mechanical, electrical, and MEP coordination.
-                        </p>
-                    </div>
-                    <ul class="text-xs text-cada-charcoal/70 space-y-2 font-light border-t border-cada-sand pt-4">
-                        <li class="flex items-center gap-2"><span class="text-cada-sage">•</span> Spatial Planning & 3D Architectural Visualisation</li>
-                        <li class="flex items-center gap-2"><span class="text-cada-sage">•</span> Commercial Showrooms & Executive Workspace Fit-Outs</li>
-                        <li class="flex items-center gap-2"><span class="text-cada-sage">•</span> Luxury Residential Living & Bedroom Styling</li>
-                    </ul>
-                </div>
-
-                <!-- Service 2: Brand Identity Development -->
-                <div class="bg-white border border-cada-sand p-8 space-y-6 hover:border-cada-sage transition-all duration-300 flex flex-col justify-between">
-                    <div class="space-y-4">
-                        <div class="h-48 overflow-hidden relative">
-                            <img src="Images/9.jpg" alt="Corporate Brand Identity Collateral Suite" class="w-full h-full object-cover">
-                        </div>
-                        <span class="text-xs font-accent uppercase text-cada-sage tracking-widest block">Pillar 02</span>
-                        <h3 class="font-serif text-2xl text-cada-dark">Brand Identity Development</h3>
-                        <p class="text-xs text-cada-charcoal/80 leading-relaxed font-light">
-                            Crafting distinguished visual identities for corporate entities and consumer brands. We align brand positioning with tangible aesthetics across digital and print collateral.
-                        </p>
-                    </div>
-                    <ul class="text-xs text-cada-charcoal/70 space-y-2 font-light border-t border-cada-sand pt-4">
-                        <li class="flex items-center gap-2"><span class="text-cada-sage">•</span> Brand Strategy & Visual Identity Systems</li>
-                        <li class="flex items-center gap-2"><span class="text-cada-sage">•</span> Premium Stationery, Packaging & Collateral Suites</li>
-                        <li class="flex items-center gap-2"><span class="text-cada-sage">•</span> Brand Guidelines & Architectural Integration</li>
-                    </ul>
-                </div>
-
-                <!-- Service 3: Event Styling & Floral Architecture -->
-                <div class="bg-white border border-cada-sand p-8 space-y-6 hover:border-cada-sage transition-all duration-300 flex flex-col justify-between">
-                    <div class="space-y-4">
-                        <div class="h-48 overflow-hidden relative">
-                            <img src="Images/10.jpg" alt="Luxury Wedding Arch with White Florals" class="w-full h-full object-cover">
-                        </div>
-                        <span class="text-xs font-accent uppercase text-cada-sage tracking-widest block">Pillar 03</span>
-                        <h3 class="font-serif text-2xl text-cada-dark">Event Styling & Floral Architecture</h3>
-                        <p class="text-xs text-cada-charcoal/80 leading-relaxed font-light">
-                            High-concept spatial decoration for VIP weddings, corporate galas, and bespoke brand pop-ups. Transforming bare venues into unforgettable visual atmospheres.
-                        </p>
-                    </div>
-                    <ul class="text-xs text-cada-charcoal/70 space-y-2 font-light border-t border-cada-sand pt-4">
-                        <li class="flex items-center gap-2"><span class="text-cada-sage">•</span> Wedding Floral Structures & Ceremony Arches</li>
-                        <li class="flex items-center gap-2"><span class="text-cada-sage">•</span> Opulent Banquet Table Design & Lighting Setup</li>
-                        <li class="flex items-center gap-2"><span class="text-cada-sage">•</span> Corporate Gala & Exhibition Stage Scenography</li>
-                    </ul>
-                </div>
-
-                <!-- Service 4: Private Label Perfume Manufacturing -->
-                <div class="bg-white border border-cada-sand p-8 space-y-6 hover:border-cada-sage transition-all duration-300 flex flex-col justify-between">
-                    <div class="space-y-4">
-                        <div class="h-48 overflow-hidden relative">
-                            <img src="Images/16.jpg" alt="Private Label Perfume Promotional Showcase" class="w-full h-full object-cover">
-                        </div>
-                        <span class="text-xs font-accent uppercase text-cada-sage tracking-widest block">Pillar 04</span>
-                        <h3 class="font-serif text-2xl text-cada-dark">Private Label Perfume Manufacturing</h3>
-                        <p class="text-xs text-cada-charcoal/80 leading-relaxed font-light">
-                            Turnkey fragrance development for boutique brands, corporate gifting, and luxury hospitality. Fragrance formulation, bottle design, and regulatory packaging.
-                        </p>
-                    </div>
-                    <ul class="text-xs text-cada-charcoal/70 space-y-2 font-light border-t border-cada-sand pt-4">
-                        <li class="flex items-center gap-2"><span class="text-cada-sage">•</span> Olfactory Formulation & Custom Fragrance Sourcing</li>
-                        <li class="flex items-center gap-2"><span class="text-cada-sage">•</span> Luxury Glass Bottle Tooling & Packaging Manufacturing</li>
-                        <li class="flex items-center gap-2"><span class="text-cada-sage">•</span> End-to-End Quality Control & Bottling Production</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-cada-dark text-cada-cream py-12">
@@ -156,11 +163,9 @@
             <p>&copy; 2026 CADA Concepts. All rights reserved.</p>
         </div>
     </footer>
-    <script>
-        document.getElementById('mobile-menu-toggle')?.addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    </script>
+
+    <!-- Main Interactivity Script -->
+    <script src="js/main.js"></script>
 
 </body>
 </html>
