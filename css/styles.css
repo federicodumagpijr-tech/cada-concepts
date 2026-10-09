@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Syne:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Color Theme Variables */
+:root {
+  --cada-cream: #fbf9f5;
+  --cada-dark: #121212;
+  --cada-charcoal: #2a2a2a;
+  --cada-sage: #8a9a86;
+  --cada-sand: #e6e1da;
+  --cada-taupe: #a39585;
+}
+
+/* Base Body Styles & Zen Background Pattern */
+body {
+  background-color: var(--cada-cream);
+  color: var(--cada-charcoal);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.zen-bg-pattern {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom Font Utilities */
+.font-heading {
+  font-family: 'Syne', sans-serif;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Marquee Animation for Continuous Banner */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
