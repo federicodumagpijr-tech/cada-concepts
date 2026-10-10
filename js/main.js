@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // 3. Portfolio Modal Lightbox Global Helper Functions
-window.openModal = function(imgSrc, title, category) {
+window.openModal = function (imgSrc, title, category) {
     const modal = document.getElementById('image-modal');
     const modalImg = document.getElementById('modal-img');
     const modalTitle = document.getElementById('modal-title');
@@ -66,7 +66,7 @@ window.openModal = function(imgSrc, title, category) {
     modal.setAttribute('aria-hidden', 'false');
 };
 
-window.closeModal = function() {
+window.closeModal = function () {
     const modal = document.getElementById('image-modal');
     if (modal) {
         modal.classList.add('hidden');
